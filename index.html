@@ -7,12 +7,27 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="app">
-    <h1>Welcome to Intensity Engine</h1>
-    <button onmouseover="hoverSound()" onclick="clickSound()">Start</button>
+  <div class="overlay"></div>
+  <div class="menu-container">
+    <h1 class="title">INTENSITY ENGINE</h1>
+    <div class="menu">
+      <button class="menu-button">START</button>
+      <button class="menu-button selected">SETTINGS</button>
+      <button class="menu-button">NETWORK</button>
+      <button class="menu-button">CREDITS</button>
+      <button class="menu-button">EXIT</button>
+    </div>
+    <div class="settings-panel">
+      <div class="settings-group">
+        <h2>GRAPHICS</h2>
+        <div class="setting"><span>Level of details</span><input type="range" value="100" /></div>
+        <div class="setting"><span>Model quality</span><input type="range" value="50" /></div>
+        <div class="setting"><span>FX quality</span><input type="range" value="50" /></div>
+      </div>
+      <button class="confirm-button">Confirm</button>
+    </div>
   </div>
-  <audio id="hoverSound" src="Hover.wav"></audio>
-  <audio id="clickSound" src="Click.wav"></audio>
-  <script src="main.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
