@@ -1,58 +1,67 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
 body {
-  margin: 0;
-  font-family: 'Orbitron', sans-serif;
-  background: black;
+  background: #010f1a;
+  background-image: radial-gradient(circle at center, #0ff2, #000 80%), url('bg.png');
+  background-size: cover;
   color: #0ff;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
   text-align: center;
-}
-.hidden { display: none; }
-
-#menu-bg {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  animation: flicker 2s infinite alternate;
 }
 
-.menu-buttons {
-  margin-top: 20vh;
+h1 {
+  font-size: 3.5em;
+  color: #00faff;
+  text-shadow: 0 0 8px #0ff, 0 0 15px #0ff;
+  margin-bottom: 40px;
+}
+
+.menu {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.menu-buttons button {
-  font-size: 1.5em;
+.menu-button {
   background: transparent;
   border: 2px solid #0ff;
-  padding: 1em 2em;
   color: #0ff;
-  border-radius: 10px;
+  font-size: 1.5em;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-shadow: 0 0 5px #0ff;
   cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
 }
 
-.screen {
-  padding-top: 10vh;
+.menu-button:hover {
+  background-color: rgba(0, 255, 255, 0.1);
+  transform: scale(1.05);
 }
 
-.nova-avatar {
-  width: 200px;
-  margin-bottom: 20px;
-}
-
-.intensity-ui {
-  margin: 20px;
-}
-
-#intensity-bar {
-  width: 50%;
-  height: 20px;
-}
-
-#nova-dialogue {
-  margin-top: 20px;
-  font-style: italic;
+.icon {
   font-size: 1.2em;
+  margin-right: 10px;
+}
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.97; }
+  100% { opacity: 1; }
 }
