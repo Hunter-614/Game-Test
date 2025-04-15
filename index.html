@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intensity Engine</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body style="background-color: #0d1117; color: #fff; font-family: sans-serif;">
-  <h1>Hello from Intensity Engine!</h1>
-  <p>If you're seeing this, GitHub Pages is working 🎉</p>
+<body>
+  <div id="app">
+    <h1>Welcome to Intensity Engine</h1>
+    <button onmouseover="hoverSound()" onclick="clickSound()">Start</button>
+  </div>
+  <audio id="hoverSound" src="Hover.wav"></audio>
+  <audio id="clickSound" src="Click.wav"></audio>
+  <script src="main.js"></script>
 </body>
 </html>
