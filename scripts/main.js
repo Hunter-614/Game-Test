@@ -1,1 +1,1 @@
-// NOVA initialized. Gameplay logic will go here.
+// Main gameplay loop with intensity, edging, random events, and device control
