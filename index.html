@@ -1,33 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Intensity Engine</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="overlay"></div>
-  <div class="menu-container">
-    <h1 class="title">INTENSITY ENGINE</h1>
-    <div class="menu">
-      <button class="menu-button">START</button>
-      <button class="menu-button selected">SETTINGS</button>
-      <button class="menu-button">NETWORK</button>
-      <button class="menu-button">CREDITS</button>
-      <button class="menu-button">EXIT</button>
-    </div>
-    <div class="settings-panel">
-      <div class="settings-group">
-        <h2>GRAPHICS</h2>
-        <div class="setting"><span>Level of details</span><input type="range" value="100" /></div>
-        <div class="setting"><span>Model quality</span><input type="range" value="50" /></div>
-        <div class="setting"><span>FX quality</span><input type="range" value="50" /></div>
-      </div>
-      <button class="confirm-button">Confirm</button>
-    </div>
+  <div id="main-menu">
+    <h1>Intensity Engine</h1>
+    <button id="start-session">Start Session</button>
+    <button id="connect-device">Connect Device</button>
   </div>
-
-  <script src="script.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
